@@ -1,3 +1,6 @@
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 let nav = document.querySelector(".navbar");
 window.onscroll = function () {
     if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400 ) {
